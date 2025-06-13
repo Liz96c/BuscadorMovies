@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+}
+header{
+    margin-top: 0;
+    background: linear-gradient(to bottom, #000000, #cb6ce6);
+    left: 0px;
+    padding: 10px 0px;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-direction: column;
+    margin: 0;
+
+    
+}
+#buscador{
+    display: flex;
+    margin-top: 10%;
+}
+
+
+.nav-header li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-header a{
+    color: white;
+    font-size: 18 px;
+    text-decoration: none;
+}
+.nav-header a:hover{
+    text-decoration: underline;
+}
+body{
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #737373);
+    
+    justify-content: center;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+.container{
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.868);
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10rem;
+    margin: 0;
+}
+
+h1{
+    color: #030436
+}
+h3{
+    color:#efe5ec;
+}
+p{
+    color: white;
+}
+
+input{
+    border:5 px groove #ccc;
+    border-radius: 4px;
+    padding: 10 px;
+    margin: 10px 0;
+    width: calc(100%-22px);
+}
+button{
+    background-color: #ffd034;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #1950af;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: gray;
+}
+
+footer{
+    width: 100%;
+}
+footer div{
+    display: flex;
+    
+}
+
+
+@media (min-width: 460px){
+    .container {
+        width: 100%;
+        flex-direction: column;
+    
+    }
+    
+    
+    }
+    @media (min-width: 768px){
+        .container {
+            flex-direction: column;
+            max-width: 90%;
+            margin: auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            flex-direction:column;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            
+        }
+        
+    }

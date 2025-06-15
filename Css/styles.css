@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 1rem;
-    padding: 1rem;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,30 +15,32 @@
     right: 0;
     width: 100%;
     margin: 0;
-    flex-direction: row;
+    background: linear-gradient(to bottom, #000000, #cb6ce6);
 }
 header{
-    margin-top: 0;
-    background: linear-gradient(to bottom, #000000, #cb6ce6);
-    left: 0px;
-    padding: 10px 0px;
-    position: fixed;
     text-align: center;
-    top: 0px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center ;
     flex-direction: column;
     margin: 0;
-
-    
 }
+h1{
+    display: none;
+}
+    
+
 #buscador{
     display: flex;
-    margin-top: 10%;
+    flex-direction: column;
 }
 
+
+.nav-header {
+    display: none;
+    flex-direction: column;
+
+}
 
 .nav-header li{
     display: inline-block;
@@ -59,24 +60,34 @@ body{
     background: linear-gradient(to bottom, #000000, #737373);
     
     justify-content: center;
-    min-height: 100vh;
     display:flex;
     flex-direction: column;
     
 
 }
 .container{
-    
+    align-content: center;
+    align-items: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.868);
-    max-width: 400px;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 10rem;
     margin: 0;
+    margin-top: 50%;
+}
+.nameMovie-item{
+    display: flex;
+    flex-direction: column;
+}
+.InfoMovie-item{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
 }
 
 h1{
@@ -132,15 +143,35 @@ footer div{
             max-width: 90%;
             margin: auto;
         }
+        .nav-header{
+            flex-direction: row;
+        }
+        #buscador{
+            flex-direction: row;
+        }
     }
 
     @media (min-width: 1024px) {
-        .container {
+        .container{
             flex-direction:column;
             justify-content: space-between;
             max-width: 80%;
             margin: auto;
             
+        }
+        .logo-top{
+            flex-direction: row;
+        }
+        #buscador{
+            flex-direction: row;
+        }
+        .nav-header{
+            display: flex;
+            flex-direction: row;
+
+        }
+        h1{
+            display: block;
         }
         
     }
